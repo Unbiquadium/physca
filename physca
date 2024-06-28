@@ -140,6 +140,6 @@ while True:
   if w==3:
     break
   if w==4:
-    for w in range(5):
+    for w in range(4):
       print(res[w],end=" ")
 print("thank you")
