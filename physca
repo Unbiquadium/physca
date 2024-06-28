@@ -1,0 +1,145 @@
+import math
+
+res=["q","w","e","quit"]
+
+plus=0
+minus=0
+d=0
+
+while True:
+  print("//input help for more information")
+  p=input()
+  for w in range(5):
+    if p==res[w]:
+      break
+
+  if w==0:
+    print("F=G*Mm/r^2","(G=6.6*10^-11N*m^2)")
+    print("M")
+    while True:
+      print("s")
+      qaz=input()
+      if qaz.isdigit()==True:              
+        qaz=int(qaz)        
+        break
+      else:
+        print("retry")
+    while True:
+      print("d")
+      wsx=input()
+      if wsx.isdigit()==True:
+        d=int(wsx.count(""))-1             
+        wsx=int(wsx)*(1/10)**d
+        break
+      else:
+        print("retry")
+    ol=qaz+wsx
+    alfa=ol
+    print("m")
+    while True:
+      print("s")
+      qaz=input()
+      if qaz.isdigit()==True:
+        qaz=int(qaz)
+        break
+      else:
+        print("retry")
+    while True:
+      print("d")
+      wsx=input()
+      if wsx.isdigit()==True:
+        d=int(wsx.count(""))-1
+        wsx=int(wsx)*(1/10)**d
+        break
+      else:
+        print("retry")
+    ol=qaz+wsx
+    bravo=ol
+    print("r")
+    while True:
+      while True:
+        print("s")
+        qaz=input()
+        if qaz.isdigit()==True:
+          qaz=int(qaz)
+          break
+        else:
+          print("retry")
+      while True:
+        print("d")
+        wsx=input()
+        if wsx.isdigit()==True:
+          d=int(wsx.count(""))-1
+          wsx=int(wsx)*(1/10)**d
+          break
+        else:
+          print("retry")
+      ol=qaz+wsx
+      if ol==0.0:
+        print("retry")
+      else:
+        break
+    charlie=ol
+    delta=(6.6*10**-11)*(alfa*bravo)/(charlie**2)
+    print(delta)
+  if w==1:
+    print("unused")
+  if w==2:
+    print("Ek=(1/2)*m*v^2")
+
+    print("m")
+
+    while True:
+      print("s")
+      qaz=input()
+      if qaz.isdigit()==True:
+        qaz=int(qaz)
+        break
+      else:
+        print("retry")
+
+    while True:
+      print("d")
+      wsx=input()
+      if wsx.isdigit()==True:
+        d=int(wsx.count(""))-1
+        wsx=int(wsx)*(1/10)**d
+        break
+      else:
+        print("retry")
+
+    ol=qaz+wsx
+    alfa=ol
+    print("v")
+
+    while True:
+      print("s")
+      qaz=input()
+      if qaz.isdigit()==True:
+        qaz=int(qaz)
+        break
+      else:
+        print("retry")
+
+    while True:
+      print("d")
+      wsx=input()
+      if wsx.isdigit()==True:
+        d=int(wsx.count(""))-1
+        wsx=int(wsx)*(1/10)**d
+        break
+      else:
+        print("retry")
+
+    ol=qaz+wsx
+    bravo=ol
+    charlie=(1/2)*(alfa)*(bravo**2)
+    print(charlie)
+
+
+  if w==3:
+    break
+  if w==4:
+    for w in range(5):
+      print(res[w],end=" ")
+print("thank you")
